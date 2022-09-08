@@ -4,14 +4,482 @@
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>MiuniMIDI</title>
     <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" />
   </head>
   <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
+    <header>
+      <svg class="logo" width="29" height="28" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="13.1923" height="47.1154" fill="black"/>
+        <rect x="16.9615" y="10.3654" width="14.1346" height="36.75" fill="black"/>
+        <rect x="34.8654" width="14.1346" height="47.1154" fill="black"/>
+        </svg>
+      <h1 class="title">MiuniMIDI</h1>
+    </header>
+    
+    <div class="container-pedalera">
+    <div class="pedalera">
+    <svg class="svg1"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 1593.000000 750.000000"
+          preserveAspectRatio="xMidYMid meet"
+        >
+        
+          <metadata>
+            Created by potrace 1.16, written by Peter Selinger 2001-2019
+          </metadata>
+          <foreignobject x="208" y="112" width="80" height="80"> 
+            <div id="clickbtn1"style="border:1px transparent solid; width:73px; height:73px; cursor:pointer;
+            border-radius:50%"></div>          
+          </foreignobject>
+          <foreignobject x="760" y="112" width="80" height="80"> 
+            <div id="clickbtn2"style="border:1px transparent solid; width:73px; height:73px; cursor:pointer;
+            border-radius:50%"></div>          
+          </foreignobject>
+          <foreignobject x="1312" y="112" width="80" height="80"> 
+            <div id="clickbtn3"style="border:1px transparent solid; width:73px; height:73px; cursor:pointer;
+            border-radius:50%"></div>          
+          </foreignobject>
+          <foreignobject x="208" y="564" width="80" height="80"> 
+            <div id="clickbtn4"style="border:1px transparent solid; width:73px; height:73px; cursor:pointer;
+            border-radius:50%"></div>          
+          </foreignobject>
+          <foreignobject x="760" y="564" width="80" height="80"> 
+            <div id="clickbtn5"style="border:1px transparent solid; width:73px; height:73px; cursor:pointer;
+            border-radius:50%"></div>          
+          </foreignobject>
+          <foreignobject x="1312" y="564" width="80" height="80"> 
+            <div id="clickbtn6"style="border:1px transparent solid; width:73px; height:73px; cursor:pointer;
+            border-radius:50%"></div>          
+          </foreignobject>
+          
+          <foreignobject x="235" y="220" width="80" height="80"> 
+            <div id="ledbtn1"class="btnencendido"></div>   
+          </foreignobject>
+          <foreignobject x="786" y="220" width="80" height="80"> 
+            <div id="ledbtn2" class="btnapagado"></div>   
+          </foreignobject>
+          <foreignobject x="1337" y="220" width="80" height="80"> 
+            <div id="ledbtn3" class="btnapagado"></div>   
+          </foreignobject>
+          <foreignobject x="235" y="506" width="80" height="80"> 
+            <div id="ledbtn4" class="btnapagado"></div>   
+          </foreignobject>
+          <foreignobject x="786" y="506" width="80" height="80"> 
+            <div id="ledbtn5" class="btnapagado"></div>   
+          </foreignobject>
+          <foreignobject x="1337" y="506" width="80" height="80"> 
+            <div id="ledbtn6" class="btnapagado"></div>   
+          </foreignobject>
+          <foreignobject id="btn-text1" class="btn-text1" x="198" y="250" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-textt1" class="btn-text1" x="198" y="300" width="100" height="100">
+         </foreignobject>
+         <foreignobject id="btn-texttt1" class="btn-text1" x="198" y="335" width="100" height="100">
+        </foreignobject>
+          <foreignobject id="btn-text2" class="btn-text1" x="747" y="250" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-textt2" class="btn-text1" x="747" y="300" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-texttt2" class="btn-text1" x="747" y="335" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-text3" class="btn-text1" x="1298" y="250" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-textt3" class="btn-text1" x="1298" y="300" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-texttt3" class="btn-text1" x="1298" y="335" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-text4" class="btn-text1" x="198" y="462" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-textt4" class="btn-text1" x="198" y="427" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-texttt4" class="btn-text1" x="198" y="380" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-text5" class="btn-text1" x="747" y="462" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-textt5" class="btn-text1" x="747" y="427" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-texttt5" class="btn-text1" x="747" y="380" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-text6" class="btn-text1" x="1298" y="462" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-textt6" class="btn-text1" x="1298" y="427" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btn-texttt6" class="btn-text1" x="1298" y="380" width="100" height="100">
+          </foreignobject>
+         
+          <g
+            transform="translate(0.000000,750.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+          
+            <path
+              d="M13 7485 c-10 -11 -13 -773 -13 -3735 0 -3212 2 -3723 14 -3736 22 -21 15880 -21 15902 0 21 22 21 7450 0 7472 -22 21 -15885 21 -15903 -1z m15872 -3735 l0 -3705 -7917 -3 -7918 -2 0 3710 0 3710 7918 -2 7917 -3 0 -3705z"
+            />
+            <path
+              d="M82 3748 l3 -3673 7880 0 7880 0 3 3673 2 3672 -7885 0 -7885 0 2 -3672z m15748 2 l0 -3650 -7865 0 -7865 0 0 3650 0 3650 7865 0 7865 0 0 -3650z"
+            />
+            <path
+              d="M180 3759 c0 -3064 2 -3552 14 -3565 22 -21 15520 -21 15542 0 12 13 14 501 14 3565 l0 3551 -7785 0 -7785 0 0 -3551z m15530 -19 l0 -3520 -7745 0 -7745 0 0 3520 0 3520 7745 0 7745 0 0 -3520z"
+            />
+            
+            <path
+              d="M2375 6579 c-283 -36 -496 -277 -497 -562 -1 -271 178 -500 440 -562 93 -23 230 -16 319 15 395 138 513 648 219 943 -130 129 -302 189 -481 166z m235 -59 c217 -64 370 -274 370 -509 0 -151 -51 -273 -157 -377 -210 -207 -538 -208 -746 -1 -111 110 -160 226 -159 382 1 110 25 196 80 281 136 209 370 294 612 224z"
+            />
+            <path
+              d="M2307 6511 c-218 -59 -377 -270 -377 -501 0 -231 158 -437 385 -501 78 -22 217 -17 298 10 299 101 439 434 301 722 -39 82 -130 179 -208 222 -120 67 -264 84 -399 48z m288 -18 c161 -51 286 -175 335 -332 25 -78 27 -210 5 -286 -64 -218 -260 -365 -488 -365 -138 0 -255 49 -353 146 -100 101 -145 208 -146 350 -1 146 45 259 146 360 134 134 325 182 501 127z" 
+            />
+            <path
+              d="M2354 6436 c-84 -19 -138 -49 -205 -112 -303 -290 -54 -799 364 -742 183 25 340 182 365 365 42 303 -229 556 -524 489z m167 -36 c163 -31 295 -168 317 -328 44 -319 -270 -551 -561 -414 -244 114 -299 445 -105 634 96 94 220 132 349 108z"
+            />
+            
+            <path id="lala"
+              d="M2307 6366 c-150 -63 -237 -194 -237 -355 0 -154 79 -278 220 -345 59 -28 74 -31 160 -31 84 0 103 3 157 29 76 35 153 113 191 193 23 50 27 71 27 153 0 85 -3 102 -31 160 -38 80 -101 145 -179 185 -51 25 -72 30 -155 33 -82 2 -103 -1 -153 -22z m295 -23 c68 -30 150 -112 179 -178 88 -199 -10 -428 -215 -501 -62 -23 -180 -20 -248 6 -71 26 -160 105 -193 170 -92 182 -20 406 158 497 99 50 217 52 319 6z"
+            />
+            <path
+              d="M13430 6583 c-228 -23 -419 -182 -496 -413 -25 -76 -25 -244 0 -320 47 -143 152 -274 271 -338 229 -125 498 -87 682 94 106 106 158 219 169 369 23 313 -215 585 -531 608 -33 2 -76 2 -95 0z m214 -62 c168 -54 295 -180 352 -351 26 -77 26 -244 0 -319 -79 -228 -276 -371 -512 -371 -235 0 -440 153 -511 382 -22 71 -22 225 0 298 86 286 391 450 671 361z"
+            />
+            <path
+              d="M13353 6515 c-173 -47 -307 -177 -365 -355 -28 -85 -26 -227 5 -311 46 -129 120 -220 228 -283 91 -54 152 -70 264 -70 150 0 262 45 364 145 102 100 154 224 154 369 0 149 -48 265 -154 371 -126 126 -326 180 -496 134z m282 -22 c172 -54 312 -210 345 -382 32 -169 -21 -339 -144 -461 -161 -160 -428 -187 -622 -62 -148 96 -228 244 -228 422 0 187 85 339 242 433 123 74 271 92 407 50z"
+            />
+            <path
+              d="M13407 6440 c-75 -13 -168 -62 -224 -118 -236 -236 -143 -621 175 -726 108 -36 259 -16 361 48 301 190 253 649 -82 774 -63 24 -165 34 -230 22z m154 -40 c117 -22 226 -107 281 -218 39 -79 50 -196 25 -279 -50 -169 -203 -285 -377 -285 -92 0 -150 18 -224 67 -287 191 -204 636 134 711 70 16 95 16 161 4z"
+            />
+            <path
+              d="M13358 6371 c-69 -28 -113 -57 -155 -105 -155 -176 -122 -442 70 -569 232 -154 537 -25 588 248 30 166 -60 341 -213 411 -82 38 -216 45 -290 15z m263 -20 c212 -80 296 -351 167 -546 -139 -209 -463 -209 -602 0 -50 76 -69 144 -64 229 16 250 262 406 499 317z"
+            />
+            <path
+              d="M7820 6564 c-95 -25 -179 -74 -256 -150 -118 -116 -168 -236 -168 -404 0 -158 47 -279 153 -392 173 -186 448 -234 676 -121 133 67 247 202 291 348 25 84 25 250 0 325 -68 202 -218 346 -411 395 -74 19 -212 18 -285 -1z m305 -44 c153 -44 295 -187 351 -351 26 -76 26 -243 0 -319 -60 -174 -185 -296 -365 -355 -72 -23 -220 -23 -293 0 -146 48 -264 145 -326 268 -192 382 111 823 533 775 33 -3 78 -12 100 -18z"
+            />
+            <path
+              d="M7880 6524 c-145 -28 -289 -126 -358 -243 -53 -90 -74 -168 -73 -271 0 -150 47 -265 149 -367 203 -202 526 -205 728 -6 106 105 157 224 157 373 0 224 -138 417 -351 491 -56 20 -201 33 -252 23z m243 -37 c171 -62 285 -183 328 -349 85 -322 -153 -631 -486 -631 -138 0 -263 52 -359 150 -97 98 -140 207 -140 353 -1 225 128 402 349 481 78 27 226 25 308 -4z"
+            />
+            <path
+              d="M7905 6440 c-259 -40 -425 -289 -360 -540 68 -261 356 -398 601 -286 275 126 341 488 128 700 -97 97 -239 145 -369 126z m203 -62 c268 -99 339 -461 129 -655 -265 -244 -688 -45 -665 312 17 265 284 435 536 343z"
+            />
+            <path
+              d="M7845 6372 c-321 -110 -351 -555 -47 -704 62 -31 74 -33 167 -33 88 0 107 3 157 27 270 126 303 494 59 662 -91 63 -232 83 -336 48z m199 -7 c99 -16 207 -103 254 -203 23 -49 27 -70 27 -152 0 -88 -3 -101 -33 -162 -135 -275 -530 -269 -660 10 -23 49 -27 70 -27 152 0 84 3 102 28 152 54 109 156 188 269 207 53 9 66 8 142 -4z"
+            />
+            <path
+              d="M2380 2060 c-126 -15 -246 -75 -336 -167 -112 -113 -166 -244 -166 -403 0 -160 55 -292 167 -403 205 -206 532 -225 760 -45 139 110 215 270 215 454 0 337 -303 604 -640 564z m225 -60 c88 -27 152 -66 222 -137 103 -104 153 -226 153 -373 0 -148 -51 -271 -155 -375 -104 -105 -228 -156 -377 -156 -297 0 -531 234 -530 531 0 152 59 290 167 388 148 136 331 179 520 122z"
+            />
+            <path
+              d="M2320 1994 c-93 -25 -161 -65 -235 -139 -104 -104 -155 -224 -155 -365 0 -196 117 -382 293 -466 382 -181 808 138 737 554 -49 295 -353 492 -640 416z m295 -28 c152 -55 270 -177 316 -329 24 -78 25 -208 3 -285 -63 -217 -261 -364 -489 -363 -279 1 -497 220 -497 501 0 143 45 254 147 355 140 141 337 186 520 121z"
+            />
+            <path
+              d="M2400 1924 c-111 -18 -192 -59 -261 -131 -87 -91 -122 -178 -122 -303 0 -90 20 -160 66 -232 150 -235 476 -270 673 -74 262 263 96 708 -276 739 -30 3 -66 3 -80 1z m181 -59 c173 -62 284 -245 259 -427 -31 -220 -235 -371 -452 -337 -317 50 -446 440 -220 666 108 108 273 147 413 98z"
+            />
+            <path
+              d="M2324 1852 c-108 -38 -208 -141 -239 -247 -19 -61 -19 -166 0 -228 50 -165 207 -274 383 -265 143 6 263 87 326 218 28 59 31 74 31 160 0 86 -3 101 -31 160 -39 83 -101 145 -184 184 -55 26 -79 31 -150 33 -61 2 -99 -3 -136 -15z m266 -25 c108 -40 200 -157 220 -280 26 -164 -73 -339 -228 -397 -130 -50 -281 -20 -380 74 -120 114 -152 277 -82 423 83 176 280 251 470 180z"
+            />
+            <path
+              d="M13415 2059 c-225 -28 -404 -181 -481 -409 -25 -76 -25 -244 0 -320 32 -95 79 -173 146 -240 116 -117 244 -170 406 -170 254 0 475 163 551 409 24 78 23 245 -1 326 -82 268 -344 438 -621 404z m220 -56 c173 -54 303 -181 361 -353 26 -77 26 -244 0 -320 -59 -173 -195 -304 -366 -354 -72 -22 -211 -22 -287 -1 -85 25 -172 76 -235 140 -273 275 -170 738 194 877 99 37 233 42 333 11z"
+            />
+            <path
+              d="M13349 1991 c-332 -90 -483 -471 -307 -772 57 -97 168 -184 288 -225 76 -26 234 -26 310 0 170 57 296 186 346 355 10 33 17 91 17 141 0 148 -50 268 -157 373 -129 127 -319 176 -497 128z m280 -18 c77 -21 151 -66 214 -129 193 -195 195 -511 4 -704 -162 -163 -395 -198 -604 -92 -99 51 -199 174 -239 292 -26 78 -24 234 4 312 44 123 132 225 242 282 126 65 243 77 379 39z"
+            />
+            <path
+              d="M13413 1920 c-175 -26 -324 -177 -355 -360 -30 -173 56 -356 208 -445 287 -168 654 43 654 376 0 268 -238 469 -507 429z m137 -40 c197 -37 330 -195 330 -390 0 -348 -425 -526 -670 -281 -228 228 -106 618 209 671 66 11 73 11 131 0z"
+            />
+            <path
+              d="M13346 1846 c-107 -45 -198 -145 -228 -251 -19 -65 -13 -172 11 -238 62 -162 208 -255 383 -245 179 10 320 140 350 322 27 164 -63 331 -220 404 -84 39 -213 43 -296 8z m264 -11 c98 -33 181 -117 221 -224 29 -79 24 -193 -13 -273 -119 -255 -473 -286 -632 -55 -101 147 -83 343 42 465 106 103 241 133 382 87z"
+            />
+            <path
+              d="M7815 2040 c-188 -50 -336 -194 -401 -390 -25 -76 -23 -252 3 -330 33 -98 74 -163 147 -236 114 -114 240 -167 401 -167 256 0 477 164 551 408 25 84 25 250 0 325 -50 148 -150 272 -271 339 -126 69 -291 88 -430 51z m301 -41 c169 -52 302 -181 360 -350 26 -76 26 -243 0 -319 -77 -228 -269 -370 -506 -372 -237 -3 -439 142 -515 372 -23 68 -26 223 -6 295 66 236 271 393 512 394 61 1 107 -5 155 -20z"
+            />
+            <path
+              d="M7885 2004 c-139 -22 -293 -125 -363 -243 -52 -89 -74 -168 -73 -271 0 -151 49 -269 153 -371 202 -199 527 -200 727 0 106 106 154 222 154 372 -1 224 -139 415 -352 490 -54 19 -189 31 -246 23z m216 -30 c82 -24 140 -57 202 -114 289 -264 184 -733 -193 -856 -75 -24 -216 -24 -290 1 -163 54 -288 178 -337 335 -25 80 -22 237 5 312 55 151 178 270 330 319 73 23 209 25 283 3z"
+            />
+            <path
+              d="M7925 1922 c-131 -9 -274 -103 -338 -220 -97 -178 -66 -386 77 -526 191 -187 513 -153 661 70 180 271 15 634 -305 672 -30 4 -73 6 -95 4z m210 -77 c69 -34 117 -75 157 -137 109 -165 87 -370 -54 -505 -151 -145 -387 -146 -542 -3 -201 185 -150 524 97 644 99 49 244 49 342 1z"
+            />
+            <path
+              d="M7855 1853 c-64 -19 -146 -74 -185 -123 -200 -253 -25 -622 295 -621 118 1 204 39 283 125 69 76 95 146 96 256 0 75 -3 93 -30 150 -37 79 -78 128 -142 168 -93 60 -214 77 -317 45z m226 -19 c96 -30 177 -104 222 -202 17 -38 22 -66 22 -142 0 -88 -3 -101 -33 -162 -97 -197 -340 -265 -525 -146 -171 110 -219 349 -103 513 98 137 255 190 417 139z"
+            />
+          </g>
+        </svg>
+    
+    </div>
+    <div class="actual-pedalera">
+      <h3 class="conf-act">Configuración actual</h3>
+    <div class="actual-pedalera-interact">
+      <svg class="svg-pedalera1"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.0"
+          viewBox="0 0 1593.000000 750.000000"
+          preserveAspectRatio="xMidYMid meet" 
+        >
+          <metadata>
+            Created by potrace 1.16, written by Peter Selinger 2001-2019
+          </metadata>
+         <foreignobject id="btnactual-text1" class="btn-text1" x="198" y="250" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btnactual-text2" class="btn-text1" x="747" y="250" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btnactual-text3" class="btn-text1" x="1298" y="250" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btnactual-text4" class="btn-text1" x="198" y="462" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btnactual-text5" class="btn-text1" x="747" y="462" width="100" height="100">
+          </foreignobject>
+          <foreignobject id="btnactual-text6" class="btn-text1" x="1298" y="462" width="100" height="100">
+          </foreignobject>
+          <g
+            transform="translate(0.000000,750.000000) scale(0.100000,-0.100000)"
+            fill="#000000"
+            stroke="none"
+          >
+            <path
+              d="M13 7485 c-10 -11 -13 -773 -13 -3735 0 -3212 2 -3723 14 -3736 22 -21 15880 -21 15902 0 21 22 21 7450 0 7472 -22 21 -15885 21 -15903 -1z m15872 -3735 l0 -3705 -7917 -3 -7918 -2 0 3710 0 3710 7918 -2 7917 -3 0 -3705z"
+            />
+            <path
+              d="M82 3748 l3 -3673 7880 0 7880 0 3 3673 2 3672 -7885 0 -7885 0 2 -3672z m15748 2 l0 -3650 -7865 0 -7865 0 0 3650 0 3650 7865 0 7865 0 0 -3650z"
+            />
+            <path
+              d="M180 3759 c0 -3064 2 -3552 14 -3565 22 -21 15520 -21 15542 0 12 13 14 501 14 3565 l0 3551 -7785 0 -7785 0 0 -3551z m15530 -19 l0 -3520 -7745 0 -7745 0 0 3520 0 3520 7745 0 7745 0 0 -3520z"
+            />
+            <path
+              d="M2375 6579 c-283 -36 -496 -277 -497 -562 -1 -271 178 -500 440 -562 93 -23 230 -16 319 15 395 138 513 648 219 943 -130 129 -302 189 -481 166z m235 -59 c217 -64 370 -274 370 -509 0 -151 -51 -273 -157 -377 -210 -207 -538 -208 -746 -1 -111 110 -160 226 -159 382 1 110 25 196 80 281 136 209 370 294 612 224z"
+            />
+            <path
+              d="M2307 6511 c-218 -59 -377 -270 -377 -501 0 -231 158 -437 385 -501 78 -22 217 -17 298 10 299 101 439 434 301 722 -39 82 -130 179 -208 222 -120 67 -264 84 -399 48z m288 -18 c161 -51 286 -175 335 -332 25 -78 27 -210 5 -286 -64 -218 -260 -365 -488 -365 -138 0 -255 49 -353 146 -100 101 -145 208 -146 350 -1 146 45 259 146 360 134 134 325 182 501 127z"
+            />
+            <path
+              d="M2354 6436 c-84 -19 -138 -49 -205 -112 -303 -290 -54 -799 364 -742 183 25 340 182 365 365 42 303 -229 556 -524 489z m167 -36 c163 -31 295 -168 317 -328 44 -319 -270 -551 -561 -414 -244 114 -299 445 -105 634 96 94 220 132 349 108z"
+            />
+            <path
+              d="M2307 6366 c-150 -63 -237 -194 -237 -355 0 -154 79 -278 220 -345 59 -28 74 -31 160 -31 84 0 103 3 157 29 76 35 153 113 191 193 23 50 27 71 27 153 0 85 -3 102 -31 160 -38 80 -101 145 -179 185 -51 25 -72 30 -155 33 -82 2 -103 -1 -153 -22z m295 -23 c68 -30 150 -112 179 -178 88 -199 -10 -428 -215 -501 -62 -23 -180 -20 -248 6 -71 26 -160 105 -193 170 -92 182 -20 406 158 497 99 50 217 52 319 6z"
+            />
+            <path
+              d="M13430 6583 c-228 -23 -419 -182 -496 -413 -25 -76 -25 -244 0 -320 47 -143 152 -274 271 -338 229 -125 498 -87 682 94 106 106 158 219 169 369 23 313 -215 585 -531 608 -33 2 -76 2 -95 0z m214 -62 c168 -54 295 -180 352 -351 26 -77 26 -244 0 -319 -79 -228 -276 -371 -512 -371 -235 0 -440 153 -511 382 -22 71 -22 225 0 298 86 286 391 450 671 361z"
+            />
+            <path
+              d="M13353 6515 c-173 -47 -307 -177 -365 -355 -28 -85 -26 -227 5 -311 46 -129 120 -220 228 -283 91 -54 152 -70 264 -70 150 0 262 45 364 145 102 100 154 224 154 369 0 149 -48 265 -154 371 -126 126 -326 180 -496 134z m282 -22 c172 -54 312 -210 345 -382 32 -169 -21 -339 -144 -461 -161 -160 -428 -187 -622 -62 -148 96 -228 244 -228 422 0 187 85 339 242 433 123 74 271 92 407 50z"
+            />
+            <path
+              d="M13407 6440 c-75 -13 -168 -62 -224 -118 -236 -236 -143 -621 175 -726 108 -36 259 -16 361 48 301 190 253 649 -82 774 -63 24 -165 34 -230 22z m154 -40 c117 -22 226 -107 281 -218 39 -79 50 -196 25 -279 -50 -169 -203 -285 -377 -285 -92 0 -150 18 -224 67 -287 191 -204 636 134 711 70 16 95 16 161 4z"
+            />
+            <path
+              d="M13358 6371 c-69 -28 -113 -57 -155 -105 -155 -176 -122 -442 70 -569 232 -154 537 -25 588 248 30 166 -60 341 -213 411 -82 38 -216 45 -290 15z m263 -20 c212 -80 296 -351 167 -546 -139 -209 -463 -209 -602 0 -50 76 -69 144 -64 229 16 250 262 406 499 317z"
+            />
+            <path
+              d="M7820 6564 c-95 -25 -179 -74 -256 -150 -118 -116 -168 -236 -168 -404 0 -158 47 -279 153 -392 173 -186 448 -234 676 -121 133 67 247 202 291 348 25 84 25 250 0 325 -68 202 -218 346 -411 395 -74 19 -212 18 -285 -1z m305 -44 c153 -44 295 -187 351 -351 26 -76 26 -243 0 -319 -60 -174 -185 -296 -365 -355 -72 -23 -220 -23 -293 0 -146 48 -264 145 -326 268 -192 382 111 823 533 775 33 -3 78 -12 100 -18z"
+            />
+            <path
+              d="M7880 6524 c-145 -28 -289 -126 -358 -243 -53 -90 -74 -168 -73 -271 0 -150 47 -265 149 -367 203 -202 526 -205 728 -6 106 105 157 224 157 373 0 224 -138 417 -351 491 -56 20 -201 33 -252 23z m243 -37 c171 -62 285 -183 328 -349 85 -322 -153 -631 -486 -631 -138 0 -263 52 -359 150 -97 98 -140 207 -140 353 -1 225 128 402 349 481 78 27 226 25 308 -4z"
+            />
+            <path
+              d="M7905 6440 c-259 -40 -425 -289 -360 -540 68 -261 356 -398 601 -286 275 126 341 488 128 700 -97 97 -239 145 -369 126z m203 -62 c268 -99 339 -461 129 -655 -265 -244 -688 -45 -665 312 17 265 284 435 536 343z"
+            />
+            <path
+              d="M7845 6372 c-321 -110 -351 -555 -47 -704 62 -31 74 -33 167 -33 88 0 107 3 157 27 270 126 303 494 59 662 -91 63 -232 83 -336 48z m199 -7 c99 -16 207 -103 254 -203 23 -49 27 -70 27 -152 0 -88 -3 -101 -33 -162 -135 -275 -530 -269 -660 10 -23 49 -27 70 -27 152 0 84 3 102 28 152 54 109 156 188 269 207 53 9 66 8 142 -4z"
+            />
+            <path
+              d="M2380 2060 c-126 -15 -246 -75 -336 -167 -112 -113 -166 -244 -166 -403 0 -160 55 -292 167 -403 205 -206 532 -225 760 -45 139 110 215 270 215 454 0 337 -303 604 -640 564z m225 -60 c88 -27 152 -66 222 -137 103 -104 153 -226 153 -373 0 -148 -51 -271 -155 -375 -104 -105 -228 -156 -377 -156 -297 0 -531 234 -530 531 0 152 59 290 167 388 148 136 331 179 520 122z"
+            />
+            <path
+              d="M2320 1994 c-93 -25 -161 -65 -235 -139 -104 -104 -155 -224 -155 -365 0 -196 117 -382 293 -466 382 -181 808 138 737 554 -49 295 -353 492 -640 416z m295 -28 c152 -55 270 -177 316 -329 24 -78 25 -208 3 -285 -63 -217 -261 -364 -489 -363 -279 1 -497 220 -497 501 0 143 45 254 147 355 140 141 337 186 520 121z"
+            />
+            <path
+              d="M2400 1924 c-111 -18 -192 -59 -261 -131 -87 -91 -122 -178 -122 -303 0 -90 20 -160 66 -232 150 -235 476 -270 673 -74 262 263 96 708 -276 739 -30 3 -66 3 -80 1z m181 -59 c173 -62 284 -245 259 -427 -31 -220 -235 -371 -452 -337 -317 50 -446 440 -220 666 108 108 273 147 413 98z"
+            />
+            <path
+              d="M2324 1852 c-108 -38 -208 -141 -239 -247 -19 -61 -19 -166 0 -228 50 -165 207 -274 383 -265 143 6 263 87 326 218 28 59 31 74 31 160 0 86 -3 101 -31 160 -39 83 -101 145 -184 184 -55 26 -79 31 -150 33 -61 2 -99 -3 -136 -15z m266 -25 c108 -40 200 -157 220 -280 26 -164 -73 -339 -228 -397 -130 -50 -281 -20 -380 74 -120 114 -152 277 -82 423 83 176 280 251 470 180z"
+            />
+            <path
+              d="M13415 2059 c-225 -28 -404 -181 -481 -409 -25 -76 -25 -244 0 -320 32 -95 79 -173 146 -240 116 -117 244 -170 406 -170 254 0 475 163 551 409 24 78 23 245 -1 326 -82 268 -344 438 -621 404z m220 -56 c173 -54 303 -181 361 -353 26 -77 26 -244 0 -320 -59 -173 -195 -304 -366 -354 -72 -22 -211 -22 -287 -1 -85 25 -172 76 -235 140 -273 275 -170 738 194 877 99 37 233 42 333 11z"
+            />
+            <path
+              d="M13349 1991 c-332 -90 -483 -471 -307 -772 57 -97 168 -184 288 -225 76 -26 234 -26 310 0 170 57 296 186 346 355 10 33 17 91 17 141 0 148 -50 268 -157 373 -129 127 -319 176 -497 128z m280 -18 c77 -21 151 -66 214 -129 193 -195 195 -511 4 -704 -162 -163 -395 -198 -604 -92 -99 51 -199 174 -239 292 -26 78 -24 234 4 312 44 123 132 225 242 282 126 65 243 77 379 39z"
+            />
+            <path
+              d="M13413 1920 c-175 -26 -324 -177 -355 -360 -30 -173 56 -356 208 -445 287 -168 654 43 654 376 0 268 -238 469 -507 429z m137 -40 c197 -37 330 -195 330 -390 0 -348 -425 -526 -670 -281 -228 228 -106 618 209 671 66 11 73 11 131 0z"
+            />
+            <path
+              d="M13346 1846 c-107 -45 -198 -145 -228 -251 -19 -65 -13 -172 11 -238 62 -162 208 -255 383 -245 179 10 320 140 350 322 27 164 -63 331 -220 404 -84 39 -213 43 -296 8z m264 -11 c98 -33 181 -117 221 -224 29 -79 24 -193 -13 -273 -119 -255 -473 -286 -632 -55 -101 147 -83 343 42 465 106 103 241 133 382 87z"
+            />
+            <path
+              d="M7815 2040 c-188 -50 -336 -194 -401 -390 -25 -76 -23 -252 3 -330 33 -98 74 -163 147 -236 114 -114 240 -167 401 -167 256 0 477 164 551 408 25 84 25 250 0 325 -50 148 -150 272 -271 339 -126 69 -291 88 -430 51z m301 -41 c169 -52 302 -181 360 -350 26 -76 26 -243 0 -319 -77 -228 -269 -370 -506 -372 -237 -3 -439 142 -515 372 -23 68 -26 223 -6 295 66 236 271 393 512 394 61 1 107 -5 155 -20z"
+            />
+            <path
+              d="M7885 2004 c-139 -22 -293 -125 -363 -243 -52 -89 -74 -168 -73 -271 0 -151 49 -269 153 -371 202 -199 527 -200 727 0 106 106 154 222 154 372 -1 224 -139 415 -352 490 -54 19 -189 31 -246 23z m216 -30 c82 -24 140 -57 202 -114 289 -264 184 -733 -193 -856 -75 -24 -216 -24 -290 1 -163 54 -288 178 -337 335 -25 80 -22 237 5 312 55 151 178 270 330 319 73 23 209 25 283 3z"
+            />
+            <path
+              d="M7925 1922 c-131 -9 -274 -103 -338 -220 -97 -178 -66 -386 77 -526 191 -187 513 -153 661 70 180 271 15 634 -305 672 -30 4 -73 6 -95 4z m210 -77 c69 -34 117 -75 157 -137 109 -165 87 -370 -54 -505 -151 -145 -387 -146 -542 -3 -201 185 -150 524 97 644 99 49 244 49 342 1z"
+            />
+            <path
+              d="M7855 1853 c-64 -19 -146 -74 -185 -123 -200 -253 -25 -622 295 -621 118 1 204 39 283 125 69 76 95 146 96 256 0 75 -3 93 -30 150 -37 79 -78 128 -142 168 -93 60 -214 77 -317 45z m226 -19 c96 -30 177 -104 222 -202 17 -38 22 -66 22 -142 0 -88 -3 -101 -33 -162 -97 -197 -340 -265 -525 -146 -171 110 -219 349 -103 513 98 137 255 190 417 139z"
+            />
+          </g>
+        </svg>
+    
+    </div> 
+    </div>
+    </div>
+    <div style="border-left:2px solid black; height:480px; float:left; padding-left: 50px; margin-top: 50px"></div>
+    <div class="configuracion"> 
+      
+       <div class="col-md-4 col-md-push-1 animate-box fadeInRight animated-fast" data-animate-effect="fadeInRight">
+        <div id="btnconfigurando" class="btnconfigurando">Botón 1</div>
+        <div class="form-wrap">
+            <div class="tab">
+                
+                <div class="tab-content">
+                    <div class="tab-content-inner active" data-content="signup">
+                        <div class="configur"><h3 id="confn" class="h3confn">Configuración</h3>
+                        <div id="flechita" class="cont-flechita">
+                          <div class="flechita"></div></div>
+                      </div>
+                        <div id="conf-id" class="conf-class">
+                          <div class="contconf">
+                          <div class = filaconf1>
+                            <div class="row form-group">
+                              <div class="col-md-12">
+                                  <label for="Canal">Canal</label>
+                                  <select name="tipo-name" id="Canal-id" class="form-control">
+    
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="Tipo">Tipo de mensaje</label>
+                                    <select name="tipo-name" id="Tipo-id" class="form-control">
+                                        <option value="">Note</option>
+                                        <option value="">CC</option>
+                                        <option value="">PC</option>
+                                        <option value="">Pitch</option>
+                                        <option value="">Sysex</option>
+                                    </select>
+                                </div>
+                            </div>
+                          </div>  
+                          <div class = filaconf2>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="Mensaje">Mensaje</label>
+                                    <select name="mensaje-name" id="Mensaje-id" class="form-control">
+                                      
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label for="Valores">Valores</label>
+                                    <select name="valores-name" id="valores-id" class="form-control">
+                                        
+                                    </select>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                            <div>
+                              
+                                <button id= "cargarboton" class="cargarboton"> Cargar botón
+                                  <div class="bordeboton"></div>
+                                </button>
+                              
+                            </div>
+                            
+    
+                        </div>	
+                    </div>
+    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="configuracion-avanzada"> 
+      <div class="col-md-4 col-md-push-1 animate-box fadeInRight animated-fast" data-animate-effect="fadeInRight">
+          <div class="form-wrap">
+              <div class="tab">
+                  
+                  <div class="tab-content">
+                      <div class="tab-content-inner active" data-content="signup">
+                          <div class="configur"><h3 id="confa" class= "h3confa">Configuración avanzada y Sysex</h3>
+                          <div id="cont-f2" class="cont-flechita">
+                            <div id="flechita2" class="flechita"></div></div>
+                        </div>
+                          <div id="conf2-id" class="conf">
+                            <div class="contconf">
+                              <div class = filaconf1>
+                            <div class="row form-group">
+                              <div class="col-md-12">
+                                  <label for="Canal">Canal</label>
+                                  <select name="tipo-name" id="Canal-id" class="form-control">
+                                      <option value="">1</option>
+                                      <option value="">2</option>
+                                      <option value="">3</option>
+                                      <option value="">4</option>
+                                      <option value="">5</option>
+                                  </select>
+                              </div>
+                          </div>  
+                            <div class="row form-group">
+                                  <div class="col-md-12">
+                                      <label for="Tipo">Tipo de mensaje</label>
+                                      <select name="#" id="Tipo1-id" class="form-control">
+                                          <option value="">Note</option>
+                                          <option value="">CC</option>
+                                          <option value="">PC</option>
+                                          <option value="">Pitch</option>
+                                          <option value="">Sysex</option>
+                                      </select>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class = filaconf1>
+                              <div class="row form-group">
+                                  <div class="col-md-12">
+                                      <label for="Mensaje">Mensaje</label>
+                                      <select name="#" id="Mensaje1-id" class="form-control">
+                                          <option value="">Do5</option>
+                                          <option value="">Do#5</option>
+                                          <option value="">Re5</option>
+                                          <option value="">Re#5</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="row form-group">
+                                  <div class="col-md-12">
+                                      <label for="Valores">Valores</label>
+                                      <select name="#" id="valores1-id" class="form-control">
+                                          <option value="">0</option>
+                                          <option value="">50</option>
+                                          <option value="">100</option>
+                                          <option value="">127</option>
+                                      </select>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                              <div>
+                              
+                                <button id= "cargarboton1" class="cargarboton"> Cargar botón
+                                  <div class="bordeboton"></div>
+                                </button>
+                              
+                            </div>
+      
+                          </div>	
+                      </div>
+      
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <button id= "cargarboton2" class="cargarboton0"> Cargar preset
+      <div class="bordeboton"></div>
+    </button>
 
     <!-- You can also require other files to run in this process -->
     <script src="./renderer.js"></script>
